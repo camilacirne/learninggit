@@ -1,0 +1,3 @@
+[submodule "libs/sounddevice"]
+	path = libs/sounddevice
+	url = https://github.com/spatialaudio/python-sounddevice.git
