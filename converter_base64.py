@@ -39,6 +39,8 @@ def main():
         elif choice == '3':
             print('Bye')
             sys.exit()
+        elif choice == '0'or choice > '3':
+            print('Invalid Option. Try Again \n')
         
         else:
             print("Invalid choice. Please enter 1 or 2.")      
