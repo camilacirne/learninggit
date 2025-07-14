@@ -1,6 +1,7 @@
 import base64
+import sys
 
-""" Commit test"""
+
 
 def base64_tohex(base64_string):
     try:
@@ -22,7 +23,8 @@ def main():
             print("Choose: ")
             print("1. Base64 to Hex")
             print("2. Hex to Base64")
-            choice = input("Enter your choice (1 or 2): ").strip()
+            print("3. Exit")
+            choice = input("Enter your choice (1, 2 or 3): ").strip()
         except ValueError:
             print('Invalid Option \n')
 
@@ -34,6 +36,10 @@ def main():
             hex_string = input("Enter Hex string: ").strip()
             base64_result = hex_to_base64(hex_string)
             print(f"Base64 result: {base64_result}")
+        elif choice == '3':
+            print('Bye')
+            sys.exit()
+        
         else:
             print("Invalid choice. Please enter 1 or 2.")      
 
