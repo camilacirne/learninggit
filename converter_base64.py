@@ -20,12 +20,11 @@ def hex_to_base64(hex_string):
 
 def base64_padding(base64_string):
     try:
-        padding = ((4 - len(base64_string) % 4))
+        padding = ((4 - len(base64_string) % 4) % 4)
         padded_string = base64_string + ("=" * padding)
-        print(f"{padded_string}")
         return padded_string
     except Exception as e:
-        return f"Error padding base64 string: {e}" 
+        return f"Error padding Base64 string: {e}" 
        
 def main():
     print("Choose: ")
