@@ -45,6 +45,21 @@ def interactive_mode():
         else:
             print("Invalid choice. Please enter 1, 2 or 3.")   
 
+def arg_way():
+    if len(sys.argv) != 3:
+        print("Use: python converter_terminal.py <Options> <string>")
+        print("Options: b64tohex ou hextob64")
+        sys.exit(1)
+
+    options = sys.argv[1].lower()
+    answers = sys.argv[2]
+
+    if options == 'b64tohex':
+        print(base64_tohex(answers))
+    elif options == 'hextob64':
+        print(hex_to_base64(answers))
+    else:
+        print("Invalid Option. Use 'b64tohex' or 'hextob64'.")
 
 
 if __name__ == "__main__":
