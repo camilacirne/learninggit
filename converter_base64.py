@@ -17,7 +17,7 @@ def hex_to_base64(hex_string):
     except Exception as e:
         return f"Error converting Hex to Base64: {e}"
     
-def main():
+def interactive_mode():
     while True:
         try:
             print("Choose: ")
