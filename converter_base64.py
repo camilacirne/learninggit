@@ -61,6 +61,11 @@ def arg_way():
     else:
         print("Invalid Option. Use 'b64tohex' or 'hextob64'.")
 
+def main():
+    if len(sys.argv) > 1:
+        arg_way()
+    else:
+        interactive_mode()
 
 if __name__ == "__main__":
     main()
