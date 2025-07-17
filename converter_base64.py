@@ -1,6 +1,6 @@
 import base64
 import sys
-"commit test"
+from converter_terminal import base64_tohex, hex_to_base64
 
 
 def base64_tohex(base64_string):
@@ -43,7 +43,9 @@ def main():
             print('Invalid Option. Try Again \n')
         
         else:
-            print("Invalid choice. Please enter 1 or 2.")      
+            print("Invalid choice. Please enter 1, 2 or 3.")   
+
+
 
 if __name__ == "__main__":
     main()
