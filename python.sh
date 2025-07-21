@@ -15,5 +15,5 @@ if [[ -f "$1" && "$1" == *.txt ]]; then
             fi
         done < $1      
 else
-    echo "Pass a file as an arg"
+    echo "Pass a file with encodes as an argument"
 fi
