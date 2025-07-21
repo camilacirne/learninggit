@@ -4,6 +4,7 @@ from converter_terminal import base64_tohex, hex_to_base64
 
     
 def interactive_mode():
+
     while True:
         try:
             print("Choose: ")
