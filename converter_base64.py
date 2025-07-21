@@ -26,8 +26,7 @@ def interactive_mode():
             print('Bye')
             sys.exit()
         elif choice == '0'or choice > '3':
-            print('Invalid Option. Try Again \n')
-        
+            print('Invalid Option. Try Again \n') 
         else:
             print("Invalid choice. Please enter 1, 2 or 3.")   
 
